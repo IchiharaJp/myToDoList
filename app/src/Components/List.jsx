@@ -2,7 +2,7 @@ import "../App.css";
 
 export default function List({ children }) {
 	return (
-		<div className="bg-gray-200 w-2xs h-60 rounded-xl p-5 border-l-5 border-gray-500 shadow-xl">
+		<div className="bg-gray-50 w-full h-full p-5 border-t-8 border-blue-400 shadow-xl relative">
 			{children}
 		</div>
 	);
