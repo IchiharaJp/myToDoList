@@ -35,7 +35,7 @@ function App() {
 	};
 
 	return (
-		<div className="flex flex-col items-center justify-center h-screen text-xl [&_*]:duration-400">
+		<div className="flex flex-col items-center justify-center h-screen text-xl **:duration-400">
 			<List>
 				<h1 className="border-b font-bold mb-0.5">To do</h1>
 
@@ -61,7 +61,7 @@ function App() {
 				</button>
 
 				<button
-					className={`text-xs absolute right-16 top-5 inset-ring-1 p-1 rounded-md text-gray-700 ${
+					className={`text-xs absolute right-16 top-5 inset-ring-1 p-1 rounded-md text-gray-700 cursor-pointer ${
 						completedTasksCount()
 							? "hover:bg-gray-100 cursor-pointer"
 							: "opacity-40"
@@ -72,14 +72,14 @@ function App() {
 				</button>
 
 				<button
-					className="absolute right-3 bottom-3 text-red-400 opacity-80"
+					className="absolute right-3 bottom-3 text-red-400 opacity-80 cursor-pointer"
 					onClick={toggleDeleteMenu}
 				>
 					{trashIcon}
 				</button>
 				{showCompletedBtn && (
 					<button
-						className="flex scale-80 gap-1 text-gray-900"
+						className="flex scale-80 gap-1 text-gray-900 cursor-pointer"
 						onClick={() => setShowCompletedTasks((toggle) => !toggle)}
 					>
 						<div className={showCompletedTasks ? "rotate-90 mt-0.5" : ""}>

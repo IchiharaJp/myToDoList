@@ -27,7 +27,7 @@ export default function DeleteMenu({ tasks, setTasks, toggleDeleteMenu }) {
 				if (event.target === event.currentTarget) toggleDeleteMenu();
 			}}
 		>
-			<div className="absolute flex flex-col items-start bg-gray-200 h-100 w-xs p-6 rounded-xl shadow-lg">
+			<div className="absolute flex flex-col items-start bg-gray-200 h-fill pb-12 w-xs p-6 rounded-xl shadow-lg  sm:w-sm ">
 				<h1 className="font-bold pb-2">Select the tasks to delete</h1>
 				{tasks.map((task, index) => {
 					return (
